@@ -74,6 +74,7 @@ class MessageBar extends Component {
       avatar: props.avatar,
       alertType: props.alertType || 'info',
       duration: props.duration || def.duration || 3000,
+      children: props.children,
 
       /* Hide setters */
       shouldHideAfterDelay:
@@ -478,6 +479,7 @@ class MessageBar extends Component {
             </View>
           </View>
         </TouchableOpacity>
+        {this.state.children}
       </Animated.View>
     )
   }
