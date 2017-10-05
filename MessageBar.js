@@ -455,7 +455,7 @@ class MessageBar extends Component {
         }}>
         <TouchableOpacity
           onPress={() => {
-            this._alertTapped()
+            // this._alertTapped()
           }}
           style={{ flex: 1 }}>
           <View
